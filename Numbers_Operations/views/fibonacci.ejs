@@ -1,0 +1,9 @@
+<%-include('partials/header');%>
+    <%- include('partials/nav') %>
+
+    <form action="/fibonacci" method="post" >
+        <input type="text" placeholder="Enter the value of N" name="nValue">
+        <button type="submit">Submit</button>
+    </form>
+
+<%- include('partials/footer'); %>

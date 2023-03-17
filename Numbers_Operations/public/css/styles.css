@@ -1,0 +1,114 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+/* Nav */
+
+nav{
+    display: flex;
+    justify-content: right;
+    margin: 1rem auto;
+    /* max-width: 80%; */
+    /* float: right; */
+}
+
+nav a{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-style: normal;
+    margin: 5px 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.choose-opt{
+    margin: 5% auto;
+    color: white;
+}
+
+.toggle i{
+    display: none;
+}
+
+.toggle-options{
+    display: none;
+}
+
+.toggle-options a{
+    display: flex;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-style: normal;
+    margin: auto 2rem;
+    cursor: pointer;
+    color: white;
+    line-height: 2;
+    transition: all 1s;
+}
+
+.toggle-options a:hover{
+    padding: 5px;
+    margin: auto 3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition:all 0.2s ;
+}
+
+.show-toggle-options{
+    
+    display: block;
+    
+}
+
+h1{
+    margin: 50vh auto;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+form{
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin: 50vh auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: center;
+}
+input{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 45%;
+}
+input, button{
+    margin: 20px auto;
+    padding: 10px;
+}
+
+button{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:800px) {
+    .toggle i{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav a{
+        display: none;
+    }
+}
